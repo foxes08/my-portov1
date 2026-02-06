@@ -49,8 +49,8 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            © {currentYear} Portfolio. Made with{" "}
-            <FiHeart className="heart-icon" /> by John Doe
+            © {currentYear} Portofolio. Made with{" "}
+            <FiHeart className="heart-icon" /> by FOXES
           </p>
         </div>
       </div>

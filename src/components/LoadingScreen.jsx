@@ -34,7 +34,7 @@ const LoadingScreen = ({ onLoadComplete }) => {
               transition={{ duration: 0.5 }}
             >
               <span className="logo-bracket">{"<"}</span>
-              <span className="logo-text">Portfolio</span>
+              <span className="logo-text">FOXES</span>
               <span className="logo-bracket">{" />"}</span>
             </motion.div>
 

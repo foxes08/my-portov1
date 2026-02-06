@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProfileCard from "./ui/ProfileCard";
+import profilePhoto from "../assets/fotopas.jpeg";
 import "./About.css";
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <ProfileCard
-              avatarUrl="/img/fotopas.jpeg"
+              avatarUrl={profilePhoto}
               name=""
               title=""
               handle="foxes"
