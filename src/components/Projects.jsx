@@ -159,9 +159,6 @@ const Projects = () => {
             <motion.div
               key={project.id}
               className="project-card"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
             >
                 <div className="project-image">
                   <img src={project.image} alt={project.title} loading="lazy" />
