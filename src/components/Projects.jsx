@@ -154,18 +154,15 @@ const Projects = () => {
           ))}
         </motion.div>
 
-        <motion.div className="projects-grid" layout>
-          <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project, index) => (
-              <motion.div
-                key={project.id}
-                className="project-card"
-                layout
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.3 }}
-              >
+        <motion.div className="projects-grid">
+          {filteredProjects.map((project) => (
+            <motion.div
+              key={project.id}
+              className="project-card"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            >
                 <div className="project-image">
                   <img src={project.image} alt={project.title} loading="lazy" />
                   <div className="project-overlay">
@@ -200,7 +197,7 @@ const Projects = () => {
                 </div>
               </motion.div>
             ))}
-          </AnimatePresence>
+
         </motion.div>
       </div>
     </section>
